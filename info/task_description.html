@@ -1,7 +1,15 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
+    Take a string from a user and print an encrypted version with the following rules:
+    1 letter words - transform them into the numeric value in Unicode
+    2 letter words - transform in a coordinate pair with the numeric value of each coordinate as the position in the alphabet
+    3 letter words - reverse the order of the letters
+    4 letter words and larger - change the letter into a letter one value bigger based on Unicode value
+    
+    Finally, change any spaces to h's and any h's to spaces.
+    
+    Good luck!
 </p>
 
 <p style="text-align: center;">
@@ -10,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input: </strong> Str.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> Str. 
 </p>
 
 
@@ -25,12 +33,12 @@
     </p>
 
 {% if is_js %}
-<pre class="brush: javascript">sumTwo(3, 2) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">encrypt("I hello my passwords are good") == 73hifmmph(13,h25)hqbttxpsetherah ppe
+encrypt("I like pickles") == 73hmjlfhqjdlmft
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(3, 2) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">encrypt("I hello my passwords are good") == 73hifmmph(13,h25)hqbttxpsetherah ppe
+encrypt("I like pickles") == 73hmjlfhqjdlmft
 </pre>
 {% endif %}
 </div>
@@ -41,12 +49,5 @@ sum_two(5, 7) == 12
 <p class="for_info_only">
 
     <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
-</p>
-
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
-<p>
-    <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
+    <i>Encryption is used to send secret messages and keep files secure!</i>
 </p>

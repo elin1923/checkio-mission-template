@@ -1,16 +1,19 @@
 import assert from "assert";
 
-function sumTwo(a: number, b: number): number {
+function encrypt(password: string): string {
     // your code here
     return 0;
 }
 
 console.log('Example:');
-console.log(sumTwo(3, 2));
+console.log(encrypt("I hello my passwords are good"));
 
 // These "asserts" are used for self-checking
 assert.equal(sumTwo(3, 2), 5);
 assert.equal(sumTwo(5, 7), 12);
+
+assert.equal(encrypt("I hello my passwords are good"), '73hifmmph(13,h25)hqbttxpsetherah ppe')
+assert.equal(encrypt("I like pickles"), '73hmjlfhqjdlmft')
 
 console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
